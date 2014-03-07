@@ -84,6 +84,15 @@ function embedItResponsive( userOptions ) {
           maxWidthContainer.appendChild( responsiveContainer );
         }
 
+      }else{
+
+        /* set styles also to embed code inside of OBJECT */
+        embeddedTypes[i].style.position = 'absolute';
+        embeddedTypes[i].style.top = '0';
+        embeddedTypes[i].style.left = '0';
+        embeddedTypes[i].style.width = '100%';
+        embeddedTypes[i].style.height = '100%';
+
       }
 
     }
