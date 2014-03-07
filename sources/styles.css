@@ -46,6 +46,12 @@ footer a, a.target {
   font-size: 12px;
 }
 
+a.target {
+  font-weight: normal;
+  font-size: 16px;
+  color:#888;
+}
+
 span.sitemap {
   float: right;
 }
