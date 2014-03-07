@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Embedded Content Plugin</title>
+    <link href="sources/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="sources/embedResponsive.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <header>
+        <a href="index.html"><img src="sources/votum.gif" title="votum page transition plugin"></a>
+
+        <h1>Responsive Embedded Content Javascript Plugin</h1>
+
+        <h2>embedResponsive.js 1.0</h2>
+    </header>
+
+    <div id="main">
+        <h2>4 - How to use</h2>
+        <h4>Version 1.0 | 07. March 2014</h4>
+
+        <p class="description">
+        <ul>
+            <li>Include embedResponsive.js file in head section of your website</li>
+            <li>Include embedded code you need for your website.</li>
+            <li>Call the plugin anywhere with default options for FULL responsive content inside of script tags:</li>
+        </ul>
+        <i>
+            embedItResponsive();
+        </i>
+        <ul>
+            <li>Or call the plugin with options of your choice (here you can see the default options):</li>
+        </ul>
+        <i>
+            embedItResponsive({<br/>
+            &nbsp;&nbsp;&nbsp; types: ['iframe', 'object', 'video', 'embed'],<br/>
+            &nbsp;&nbsp;&nbsp; excludeTypes: false,<br/>
+            &nbsp;&nbsp;&nbsp; divContainer: 'body',<br/>
+            &nbsp;&nbsp;&nbsp; maxWidth: false<br/>
+            });
+        </i>
+        <br/><br/>
+        <b>Options description:</b>
+        <ul>
+            <li><b>types</b>: ['iframe', 'object', 'video', 'embed']: types you need to make responsive, here you can
+                add your
+                own types you need
+            </li>
+            <li><b>excludeTypes</b>: false: default false, if you want to exclude some types which are by default in,
+                just add
+                them into an array, for example you do not want to make <i>iframe</i> and <i>embed</i> responsive just
+                add: ['iframe', 'embed']
+            </li>
+            <li><b>divContainer</b>: a special div container which includes your embedded code, so only the content
+                inside this div will be responsive. Default is the whole body
+            </li>
+            <li><b>maxWidth</b>: 1. give a value in pixels for the maximum width which your content should have, e.g.
+                '800px', 2. set maxWidth to true, so the embedded content will have its native width
+            </li>
+        </ul>
+        <i>
+            Hint: With the divContainer and maxWidth option you can define different behaviour for embedded content
+            which is on the same site in different container. Just call the plugin twice or more with different options.
+        </i>
+
+
+    </div>
+
+    <footer>
+        <p class="footnote">
+            &copy; 2014 | Ricardo Hildebrand | votum.de <span class="sitemap"><a href="index.html">Introduction</a> | <a
+                href="responsive.html">Full Responsive Examples</a> | <a href="responsive-3.html">Different Responsive
+            Examples</a> | <a href="howto.html">How to</a></span>
+        </p>
+    </footer>
+
+</div>
+</body>
+</html>

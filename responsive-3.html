@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Embedded Content Plugin</title>
+    <link href="sources/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="sources/embedResponsive.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <header>
+        <a href="index.html"><img src="sources/votum.gif" title="votum page transition plugin"></a>
+
+        <h1>Responsive Embedded Content Javascript Plugin</h1>
+
+        <h2>embedResponsive.js 1.0</h2>
+    </header>
+
+    <div id="main">
+        <h2>3 - Different maximum widths examples</h2>
+
+        <p class="description">
+            Here we have made our contents responsive, but gave them different maximum width. If you have a look for the
+            html5 video, you can see, that makes sense, because of its small solution. For the last example we inherited
+            the elements natural width.
+            <br/><br/>
+            <a href="howto.html">Go to Page 4 for how to use the plugin.</a>
+            <br/><br/>
+        </p>
+
+        <h2>Youtube iFrame with full responsive behaviour</h2>
+
+        <p class="full">
+            <iframe width="1280" height="720" src="http://www.youtube.com/embed/0afZj1G0BIE" frameborder="0"
+                    allowfullscreen></iframe>
+        </p>
+        <br/><br/>
+
+        <h2>Vimeo object with a maximum width of 800 pixels</h2>
+
+        <p class="half">
+            <object width="400" height="224">
+                <param name="allowfullscreen" value="true"/>
+                <param name="allowscriptaccess" value="always"/>
+                <param name="movie"
+                       value="http://vimeo.com/moogaloop.swf?clip_id=83786905&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0"/>
+                <embed src="http://vimeo.com/moogaloop.swf?clip_id=83786905&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0"
+                       type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"
+                       width="400" height="224"></embed>
+            </object>
+        </p>
+        <br/><br/>
+
+        <h2>html5 video with a maximum width of 320 pixels</h2>
+
+        <p class="small">
+            <video width="320" height="224" src="sources/test.mp4" controls/>
+        </p>
+        <br/><br/>
+
+        <h2>flash video < embed > with its natural width of 700 pixels </h2>
+
+        <p class="inherit">
+            <embed src="sources/test-swf.swf" height="200" width="700">
+        </p>
+        <br/><br/>
+        <a href="howto.html">Go to Page 4 for how to use the plugin.</a>
+    </div>
+
+    <footer>
+        <p class="footnote">
+            &copy; 2014 | Ricardo Hildebrand | votum.de <span class="sitemap"><a href="index.html">Introduction</a> | <a
+                href="responsive.html">Full Responsive Examples</a> | <a href="responsive-3.html">Different Responsive
+            Examples</a> | <a href="howto.html">How to</a></span>
+        </p>
+    </footer>
+
+</div>
+<script type="text/javascript">
+    embedItResponsive( {
+        divContainer: 'p.full'
+    } );
+    embedItResponsive( {
+        divContainer: 'p.half',
+        maxWidth: '800px'
+    } );
+    embedItResponsive( {
+        divContainer: 'p.small',
+        maxWidth: '320px'
+    } );
+    embedItResponsive( {
+        divContainer: 'p.inherit',
+        maxWidth: true
+    } );
+</script>
+</body>
+</html>
