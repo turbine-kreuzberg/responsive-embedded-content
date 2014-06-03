@@ -1,4 +1,4 @@
-# Votum embedResponsive.js 1.0
+# VOTUM embedResponsive.js 1.0
 
 A little plain javascript plugin which makes your embedded content (iframe, object, ...) usable for responsive websites in a flexible way. The css and markup basics are taken from an article at smashingmagazine.com.
 
@@ -42,7 +42,7 @@ Hint: With the `divContainer` and `maxWidth` option you can define different beh
 
 ## Further notes
 
-Developed by [Ricardo Hildebrand](mailto:ricardo.hildebrand@votum.de) at [Votum](http://www.votum.de/) in Berlin, Germany.
+Developed by [Ricardo Hildebrand](mailto:ricardo.hildebrand@votum.de) at [VOTUM](http://www.votum.de/) in Berlin, Germany.
 
 ### Version & Update notes
 

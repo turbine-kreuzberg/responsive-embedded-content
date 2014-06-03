@@ -3,9 +3,8 @@
  * Plain js plugin for making embedded content responsive
  *
  * @author    Ricardo Hildebrand <ricardo.hildebrand@votum.de>
- * @copyright Copyright (c) 2014 Votum media GmbH
- *
- *
+ * @copyright Copyright (c) 2014 VOTUM media GmbH
+ * @link      https://github.com/votum/responsive-embedded-content
  */
 
 function embedItResponsive( userOptions ) {
